@@ -1,8 +1,11 @@
+/* styles as required */
+/* indicator of label */
 .indicator{
     padding: 10px;
     margin: 5px 0;
     text-align: center;
 }
+/* status colors */
 .danger{
     background-color: red;
 }
@@ -12,10 +15,11 @@
 .safe{
     background-color: green;
 }
+/* active style */
 .inactive{
     opacity: 0.3;
 }
-
+/* footer style */
 footer{
     background-color: #1c73ff;
     color: #fff;

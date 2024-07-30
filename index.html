@@ -17,11 +17,12 @@
             <h1>Pressure Monitor Interface - {{studentName}}</h1>
         </header>
         <main>
-            <p>Pressure: <strong>{{pressure}}</strong></p>
+            <p>Pressure: <strong>{{pressure}}</strong></p> <!-- pressure value is in bold -->
+            <!-- input with the type of range -->
             <input type="range" min="0" max="100" v-model="pressure">
+            <!-- div with a v-for to display the pressure levels -->
             <div v-for="level in indicatorLevels" :key="level.id" :class="['indicator', level.status, { 'inactive': !isActive(level)
                     }]">{{ level.label }}</div>
-
         </main>
         <footer>
             {{studentName}}

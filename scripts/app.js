@@ -18,9 +18,11 @@ const app = Vue.createApp({
     methods: {
         isActive(level) {
             /// Logic here for if the pressure is within the level parameters return boolean
+            /// Compare the pressure win level min or max to return a boolean
             if (this.pressure >= level.min && this.pressure <= level.max)
                 return true
             else
+                /// false if out of the range
                 return false
         }
     }
